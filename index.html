@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+    </header>
+    <main>
+      <div class="status-display">
+        Drawing off ~~~ Click in grid area to start drawing!
+      </div>
+      <div class="buttons-colors">
+        <button>Black</button>
+        <button>Greyscale</button>
+        <button>Rainbow</button>
+        <button>Eraser</button>
+      </div>
+      <div class="grid-container"></div>
+      <div class="controls-bottom">
+        <button>Clear</button>
+        <div class="slider">
+          <input
+            type="range"
+            min="16"
+            max="100"
+            value="16"
+            class="slider"
+            id="gridSize"
+          />
+          <p>Size: <span id="sliderValue"></span></p>
+        </div>
+      </div>
+    </main>
+    <footer>©The Odin Project</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
